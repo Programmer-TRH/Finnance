@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahboard</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class='navbar container '>
+        <h2 class='logo'>
+            logo
+        </h2>
+        <div class="buttons">
+            <button class="notification">
+                <svg fill="#ffffff" height="2.3rem" width="2.3rem" version="1.1" id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 611.999 611.999" xml:space="preserve">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <g>
+                                <g>
+                                    <path
+                                        d="M570.107,500.254c-65.037-29.371-67.511-155.441-67.559-158.622v-84.578c0-81.402-49.742-151.399-120.427-181.203 C381.969,34,347.883,0,306.001,0c-41.883,0-75.968,34.002-76.121,75.849c-70.682,29.804-120.425,99.801-120.425,181.203v84.578 c-0.046,3.181-2.522,129.251-67.561,158.622c-7.409,3.347-11.481,11.412-9.768,19.36c1.711,7.949,8.74,13.626,16.871,13.626 h164.88c3.38,18.594,12.172,35.892,25.619,49.903c17.86,18.608,41.479,28.856,66.502,28.856 c25.025,0,48.644-10.248,66.502-28.856c13.449-14.012,22.241-31.311,25.619-49.903h164.88c8.131,0,15.159-5.676,16.872-13.626 C581.586,511.664,577.516,503.6,570.107,500.254z M484.434,439.859c6.837,20.728,16.518,41.544,30.246,58.866H97.32 c13.726-17.32,23.407-38.135,30.244-58.866H484.434z M306.001,34.515c18.945,0,34.963,12.73,39.975,30.082 c-12.912-2.678-26.282-4.09-39.975-4.09s-27.063,1.411-39.975,4.09C271.039,47.246,287.057,34.515,306.001,34.515z M143.97,341.736v-84.685c0-89.343,72.686-162.029,162.031-162.029s162.031,72.686,162.031,162.029v84.826 c0.023,2.596,0.427,29.879,7.303,63.465H136.663C143.543,371.724,143.949,344.393,143.97,341.736z M306.001,577.485 c-26.341,0-49.33-18.992-56.709-44.246h113.416C355.329,558.493,332.344,577.485,306.001,577.485z">
+                                    </path>
+                                    <path
+                                        d="M306.001,119.235c-74.25,0-134.657,60.405-134.657,134.654c0,9.531,7.727,17.258,17.258,17.258 c9.531,0,17.258-7.727,17.258-17.258c0-55.217,44.923-100.139,100.142-100.139c9.531,0,17.258-7.727,17.258-17.258 C323.259,126.96,315.532,119.235,306.001,119.235z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <span class="notification-count">2</span>
+            </button>
+
+            <a href="./html/profile.html" class="profile button">
+                A
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="wallet-head">
+                <div class="ballance">
+                    <p>Total Ballance</p>
+                    <h1>$ 101082.23</h1>
+                </div>
+                <button class="add-ballance button " popovertarget="ballance-modal">
+                    +
+                </button>
+            </div>
+
+            <dialog popover id="ballance-modal">
+                <button id="ballance-modal-close" class="button" popovertarget="ballance-modal" popovertargetaction="close"> 
+                    X
+                </button>
+                <h2 class="modal-title">Ticket</h2>
+                <form class="modal-form">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" placeholder="100" required class="input">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" placeholder="Input your description" required class="input">
+                    </textarea>
+
+                <button class="submit button">Submit</button>
+            </form>
+        </dialog>
+        </section>
+
+
+        <section class="container wallet-body-wrapper">
+            <div class="wallet-body ">
+                <div class="wallet-buttons">
+                    <div class="wallet-button-wrapper">
+                        <button class="button withdraw">
+                            <svg viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"
+                                stroke="currentcolor">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 3C12.5523 3 13 3.44772 13 4V17.5858L18.2929 12.2929C18.6834 11.9024 19.3166 11.9024 19.7071 12.2929C20.0976 12.6834 20.0976 13.3166 19.7071 13.7071L12.7071 20.7071C12.3166 21.0976 11.6834 21.0976 11.2929 20.7071L4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929C4.68342 11.9024 5.31658 11.9024 5.70711 12.2929L11 17.5858V4C11 3.44772 11.4477 3 12 3Z"
+                                        fill="currentcolor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                        <p>Withdraw</p>
+                    </div>
+                    <div class="wallet-button-wrapper">
+                        <button class="button send" popovertarget="send-modal">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                transform="rotate(270)">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 3C12.5523 3 13 3.44772 13 4V17.5858L18.2929 12.2929C18.6834 11.9024 19.3166 11.9024 19.7071 12.2929C20.0976 12.6834 20.0976 13.3166 19.7071 13.7071L12.7071 20.7071C12.3166 21.0976 11.6834 21.0976 11.2929 20.7071L4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929C4.68342 11.9024 5.31658 11.9024 5.70711 12.2929L11 17.5858V4C11 3.44772 11.4477 3 12 3Z"
+                                        fill="#ffffff"></path>
+                                </g>
+                            </svg>
+                        </button>
+                        <p>Send</p>
+                    </div>
+                    <div class="wallet-button-wrapper">
+                        <a href="#transaction" class="receive button">
+                            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <title>swap-vertical-solid</title>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="invisible_box" data-name="invisible box">
+                                            <rect width="48" height="48" fill="none"></rect>
+                                        </g>
+                                        <g id="icons_Q2" data-name="icons Q2">
+                                            <g>
+                                                <path
+                                                    d="M24.4,33.5a2.1,2.1,0,0,0,.2-2.7,1.9,1.9,0,0,0-3-.2L17,35.2V8a2,2,0,0,0-4,0V35.2L8.4,30.6a1.9,1.9,0,0,0-3,.2,2.1,2.1,0,0,0,.2,2.7l8,7.9a1.9,1.9,0,0,0,2.8,0Z">
+                                                </path>
+                                                <path
+                                                    d="M23.6,14.5a2.1,2.1,0,0,0-.2,2.7,1.9,1.9,0,0,0,3,.2L31,12.8V40a2,2,0,0,0,4,0V12.8l4.6,4.6a1.9,1.9,0,0,0,3-.2,2.1,2.1,0,0,0-.2-2.7l-8-7.9a1.9,1.9,0,0,0-2.8,0Z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <p>Receive</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cash">
+                <div class="cashInOut">
+                    <p>Cash In</p>
+                    <h1 class="cash-in">$ 232.32</h1>
+                </div>
+                <div class="cashInOut">
+                    <p>Cash Out</p>
+                    <h1 class="cash-out">$ 232.32</h1>
+                </div>
+            </div>
+            <div class="commission">
+                <p>Commission</p>
+                <h1>$ 232.32</h1>
+            </div>
+
+        </section>
+
+        <dialog popover id="send-modal">
+            <button id="send-modal-close" class="button" popovertarget="send-modal" popovertargetaction="close"> X
+            </button>
+
+            <h2 class="modal-title">Send Money</h2>
+
+
+            <form class="modal-form">
+
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" placeholder="Jhon Doe" required class="input">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="@1234abc" required class="input">
+
+                <button class="submit button">Send</button>
+            </form>
+        </dialog>
+
+        <section class="container" id="transaction">
+            <h2 class="transaction-title">Transaction</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sahid</td>
+                        <td>203</td>
+                        <td>19.12.2024</td>
+                    </tr>
+                    <tr>
+                        <td>Mohon</td>
+                        <td>2013</td>
+                        <td>29.11.2024</td>
+                    </tr>
+                    <tr>
+                        <td>Soeb</td>
+                        <td>303</td>
+                        <td>09.12.2024</td>
+                    </tr>
+                    <tr>
+                        <td>Sahid</td>
+                        <td>203</td>
+                        <td>19.12.2024</td>
+                    </tr>
+                    <tr>
+                        <td>Sahid</td>
+                        <td>203</td>
+                        <td>19.12.2024</td>
+                    </tr>
+                    <tr>
+                        <td>Mohon</td>
+                        <td>2013</td>
+                        <td>29.11.2024</td>
+                    </tr>
+                    <tr>
+                        <td>Soeb</td>
+                        <td>303</td>
+                        <td>09.12.2024</td>
+                    </tr>
+                    <tr>
+                        <td>Sahid</td>
+                        <td>203</td>
+                        <td>19.12.2024</td>
+                    </tr>
+                    <tr>
+                        <td>Sahid</td>
+                        <td>203</td>
+                        <td>19.12.2024</td>
+                    </tr>
+                    <tr>
+                        <td>Mohon</td>
+                        <td>2013</td>
+                        <td>29.11.2024</td>
+                    </tr>
+                    <tr>
+                        <td>Soeb</td>
+                        <td>303</td>
+                        <td>09.12.2024</td>
+                    </tr>
+                    <tr>
+                        <td>Sahid</td>
+                        <td>203</td>
+                        <td>19.12.2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        
+    </main>
+    <footer class="footer">
+
+        <div class="footer-buttons">
+            <div class="footer-button-wrapper active">
+                <div class="button statistic ">
+                    <svg viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M20 15.5524C18.8263 19.2893 15.3351 22 11.2108 22C6.12383 22 2 17.8762 2 12.7892C2 8.66488 4.71065 5.1737 8.44759 4"
+                                stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path
+                                d="M21.9131 9.94727C20.8515 6.14438 17.8556 3.14845 14.0527 2.0869C12.4091 1.6281 11 3.05419 11 4.76062V11.4551C11 12.3083 11.6917 13 12.5449 13H19.2394C20.9458 13 22.3719 11.5909 21.9131 9.94727Z"
+                                stroke="#000000" stroke-width="1.5"></path>
+                        </g>
+                    </svg>
+                </div>
+                <p>Statistic</p>
+            </div>
+            <a href="/html/transaction.html" class="footer-button-wrapper active">
+                <div class="button transaction">
+                    <svg fill="#000000" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M208,72V184a7.99989,7.99989,0,0,1-8,8H176V104L136,64H80V40.00006a7.99989,7.99989,0,0,1,8-8L168,32Z"
+                                opacity="0.2"></path>
+                            <path
+                                d="M213.65723,66.34326l-40-40A8.00076,8.00076,0,0,0,168,24H88A16.01833,16.01833,0,0,0,72,40V56H56A16.01833,16.01833,0,0,0,40,72V216a16.01833,16.01833,0,0,0,16,16H168a16.01833,16.01833,0,0,0,16-16V200h16a16.01833,16.01833,0,0,0,16-16V72A8.00035,8.00035,0,0,0,213.65723,66.34326ZM168,216H56V72h76.68652L168,107.314l.00781,84.53083c-.001.05212-.00781.10284-.00781.15521,0,.05255.00684.10345.00781.15576l.002,23.84375Zm32-32H184V104a8.00035,8.00035,0,0,0-2.34277-5.65674l-40-40A8.00076,8.00076,0,0,0,136,56H88V40h76.68652L200,75.314Zm-56-32a8.00008,8.00008,0,0,1-8,8H88a8,8,0,0,1,0-16h48A8.00008,8.00008,0,0,1,144,152Zm0,32a8.00008,8.00008,0,0,1-8,8H88a8,8,0,0,1,0-16h48A8.00008,8.00008,0,0,1,144,184Z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <p>Transaction</p>
+            </a>
+            
+            <a href="./html/support.html" class="footer-button-wrapper active">
+                <div class="button support">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>support</title> <rect width="24" height="24" fill="none"></rect> <path d="M12,2a8,8,0,0,0-8,8v1.9A2.92,2.92,0,0,0,3,14a2.88,2.88,0,0,0,1.94,2.61C6.24,19.72,8.85,22,12,22h3V20H12c-2.26,0-4.31-1.7-5.34-4.39l-.21-.55L5.86,15A1,1,0,0,1,5,14a1,1,0,0,1,.5-.86l.5-.29V11a1,1,0,0,1,1-1H17a1,1,0,0,1,1,1v5H13.91a1.5,1.5,0,1,0-1.52,2H20a2,2,0,0,0,2-2V14a2,2,0,0,0-2-2V10A8,8,0,0,0,12,2Z"></path> </g></svg>
+                </div>
+                <p>Support</p>
+            </a>
+
+            <a href="./html/setting.html" class="footer-button-wrapper active">
+                <div class="button setting">
+                    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#000000"
+                                d="M600.704 64a32 32 0 0 1 30.464 22.208l35.2 109.376c14.784 7.232 28.928 15.36 42.432 24.512l112.384-24.192a32 32 0 0 1 34.432 15.36L944.32 364.8a32 32 0 0 1-4.032 37.504l-77.12 85.12a357.12 357.12 0 0 1 0 49.024l77.12 85.248a32 32 0 0 1 4.032 37.504l-88.704 153.6a32 32 0 0 1-34.432 15.296L708.8 803.904c-13.44 9.088-27.648 17.28-42.368 24.512l-35.264 109.376A32 32 0 0 1 600.704 960H423.296a32 32 0 0 1-30.464-22.208L357.696 828.48a351.616 351.616 0 0 1-42.56-24.64l-112.32 24.256a32 32 0 0 1-34.432-15.36L79.68 659.2a32 32 0 0 1 4.032-37.504l77.12-85.248a357.12 357.12 0 0 1 0-48.896l-77.12-85.248A32 32 0 0 1 79.68 364.8l88.704-153.6a32 32 0 0 1 34.432-15.296l112.32 24.256c13.568-9.152 27.776-17.408 42.56-24.64l35.2-109.312A32 32 0 0 1 423.232 64H600.64zm-23.424 64H446.72l-36.352 113.088-24.512 11.968a294.113 294.113 0 0 0-34.816 20.096l-22.656 15.36-116.224-25.088-65.28 113.152 79.68 88.192-1.92 27.136a293.12 293.12 0 0 0 0 40.192l1.92 27.136-79.808 88.192 65.344 113.152 116.224-25.024 22.656 15.296a294.113 294.113 0 0 0 34.816 20.096l24.512 11.968L446.72 896h130.688l36.48-113.152 24.448-11.904a288.282 288.282 0 0 0 34.752-20.096l22.592-15.296 116.288 25.024 65.28-113.152-79.744-88.192 1.92-27.136a293.12 293.12 0 0 0 0-40.256l-1.92-27.136 79.808-88.128-65.344-113.152-116.288 24.96-22.592-15.232a287.616 287.616 0 0 0-34.752-20.096l-24.448-11.904L577.344 128zM512 320a192 192 0 1 1 0 384 192 192 0 0 1 0-384zm0 64a128 128 0 1 0 0 256 128 128 0 0 0 0-256z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <p>Setting</p>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
